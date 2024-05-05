@@ -33,6 +33,11 @@ function App() {
       }
     }
   };
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      dataFetching();
+    }
+  };
 
   useEffect(() => {
     dataFetching();
@@ -52,6 +57,7 @@ function App() {
           onChange={(e) => {
             setCity(e.target.value);
           }}
+          onKeyPress={handleKeyPress}
         />
         <button
           className=" p-3 ml-2 flex gap-2 text-slate-100 bg-sky-600 hover:text-white hover:bg-indigo-900 rounded-full"
