@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   return (
-    <div className=" bg-[url('./assets/bg.jpg')] w-screen h-screen flex flex-col justify-start items-center gap-2 text-white">
+    <div className=" bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover w-screen h-screen flex flex-col justify-start items-center gap-2 text-white">
       <h1 className="text-6xl m-3 font-extrabold bg-gradient-to-r from-red-600 via-yellow-400 to-orange-600 inline-block text-transparent bg-clip-text">
         Weather App
       </h1>
